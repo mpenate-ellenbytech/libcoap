@@ -767,6 +767,11 @@ coap_option_check_critical(coap_session_t *session,
 }
 
 coap_mid_t
+coap_send_rst(coap_session_t *session, const coap_pdu_t *request) {
+  return coap_send_message_type(session, request, COAP_MESSAGE_RST);
+}
+
+coap_mid_t
 coap_send_ack(coap_session_t *session, const coap_pdu_t *request) {
   coap_pdu_t *response;
   coap_mid_t result = COAP_INVALID_MID;
