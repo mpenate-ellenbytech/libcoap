@@ -216,6 +216,7 @@ global:
   coap_send_ack;
   coap_send_error;
   coap_send_message_type;
+  coap_send_rst;
   coap_session_disconnected;
   coap_session_get_ack_random_factor;
   coap_session_get_ack_timeout;
